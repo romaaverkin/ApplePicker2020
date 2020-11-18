@@ -313,6 +313,18 @@ PrefabInstance:
       propertyPath: chanceToChangeDirections
       value: 0.02
       objectReference: {fileID: 0}
+    - target: {fileID: -2385244218203567828, guid: 82a3b5c1da1764247809197cdea2953d,
+        type: 3}
+      propertyPath: appleTrefab
+      value: 
+      objectReference: {fileID: 3337983133086189049, guid: 39179852d69add5479cacc25bb6c0abe,
+        type: 3}
+    - target: {fileID: -2385244218203567828, guid: 82a3b5c1da1764247809197cdea2953d,
+        type: 3}
+      propertyPath: applePrefab
+      value: 
+      objectReference: {fileID: 3337983133086189049, guid: 39179852d69add5479cacc25bb6c0abe,
+        type: 3}
     - target: {fileID: 1314053804425610768, guid: 82a3b5c1da1764247809197cdea2953d,
         type: 3}
       propertyPath: m_Name
@@ -372,6 +384,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314053804425610771, guid: 82a3b5c1da1764247809197cdea2953d,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82a3b5c1da1764247809197cdea2953d, type: 3}

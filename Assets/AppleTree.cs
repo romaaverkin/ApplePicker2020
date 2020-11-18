@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AppleTree : MonoBehaviour 
+public class AppleTree : MonoBehaviour
 {
     [Header("Set in inspector")]
     // Шаблон для создания яблок
-    public GameObject appleTrefab;
+    public GameObject applePrefab;
 
     // Скорость движения яблони
     public float speed = 1f;
@@ -24,6 +24,14 @@ public class AppleTree : MonoBehaviour
     void Start()
     {
         // Сбрасывать яблоки раз в секунду
+        Invoke("DropApple", 2f);
+    }
+
+    void DropApple()
+    {
+        GameObject apple = Instantiate<GameObject>(applePrefab);
+        apple.transform.position = transform.position;
+        Invoke("DropApple", secondsBetweenAppleDrops);
     }
 
     // Update is called once per frame
