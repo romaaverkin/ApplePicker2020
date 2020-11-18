@@ -44,4 +44,14 @@ public class AppleTree : MonoBehaviour
             speed = -Mathf.Abs(speed);
         }
     }
+
+    void FixedUpdate()
+    {
+        // Теперь случайная смена направления привязана ко времени,
+        // потому что выполняется в FixedUpdate()
+        if (Random.value < chanceToChangeDirections)
+        {
+            speed *= -1;
+        }
+    }
 }
