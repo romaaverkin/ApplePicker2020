@@ -29,4 +29,14 @@ public class Basket : MonoBehaviour
         pos.x = mousePos3D.x;
         transform.position = pos;
     }
+
+    void OnCollisionEnter(Collision coll)
+    {
+        // Отыскать яблоко, попавшее в корзину
+        GameObject collidedWith = coll.gameObject;
+        if (collidedWith.tag == "Apple")
+        {
+            Destroy(collidedWith);
+        }
+    }
 }
